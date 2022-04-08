@@ -445,7 +445,7 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -457,7 +457,7 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
@@ -474,7 +474,7 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -1953,7 +1953,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #039e85;
+  background: #ffbfff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2729,7 +2729,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 960px;
+  width: 1200px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2749,7 +2749,7 @@ pre .javascript .function {
   width: 240px;
   background: #fff;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 15px 15px 15px 15px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -2789,7 +2789,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 960px;
+  width: 1200px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -2805,11 +2805,11 @@ pre .javascript .function {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 700px;
-  background: #fff;
+  width: 900px;
+  background: rgba(255,255,255,0.7);
   min-height: 700px;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 15px 15px 15px 15px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2848,7 +2848,7 @@ pre .javascript .function {
   display: none;
 }
 .footer-inner {
-  width: 960px;
+  width: 1200px;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2990,7 +2990,7 @@ pre .javascript .function {
   color: #555;
   background: #fff;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 15px;
   opacity: 0;
 }
 .sidebar-inner.affix {
@@ -3120,4 +3120,14 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.post {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.headband {
+  display: none;
 }
