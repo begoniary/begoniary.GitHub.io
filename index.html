@@ -310,8 +310,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2022/04/10/note/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2022/04/10/note/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/04/10/note/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -451,8 +450,7 @@ I think love is a touch and yet not a touch——塞林格[4]《麦田里的守�
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2022/04/08/journal1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2022/04/08/journal1/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/04/08/journal1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -591,8 +589,7 @@ I think love is a touch and yet not a touch——塞林格[4]《麦田里的守�
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2022/04/08/about%20me/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2022/04/08/about me/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/04/08/about%20me/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -939,14 +936,6 @@ I think love is a touch and yet not a touch——塞林格[4]《麦田里的守�
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Begoniary.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -962,12 +951,38 @@ I think love is a touch and yet not a touch——塞林格[4]《麦田里的守�
 
 
 
+  
 
 
 
 
 
 
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '562HQO6VYvcstgci2Hcg80CP-MdYXbMMI',
+        appKey: 'o8RRYgP0UchINQN37oAmfFKv',
+        placeholder: 'ฅ^•ﻌ•^ฅ 来吧,找我玩～',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
