@@ -85,7 +85,7 @@
 <meta property="og:description" content="在欧式空间 $\mathcal{R}^m$中，我们来讨论一些简单的拓扑学概念[1]。 拓扑学可定义为“对特定对象（称为拓扑空间）在特定变换（称为连续映射）下不变之性质的研究，尤其是那些在特定可逆变换（称为同胚）下不变之性质。 一些定义距离距离:Distance 设欧式空间中有两个点$x_1$ ,  $\ x_2$ $x_1&#x3D;(x^1_1,x^2_1…x^m_1)$ $x_2&#x3D;(x^1_2,x^2_">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-04-12T05:19:16.000Z">
-<meta property="article:modified_time" content="2022-04-13T07:49:58.733Z">
+<meta property="article:modified_time" content="2022-04-23T18:36:56.840Z">
 <meta property="article:author" content="Begoniary">
 <meta property="article:tag" content="数学分析">
 <meta name="twitter:card" content="summary">
@@ -361,8 +361,9 @@
 <p>则称$d$为欧式空间 $\mathcal{R}^m$中的距离函数(度量,metric)。</p>
 <p>一般来说<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="当然也可以定义其它的满足条件(1)～(3)的距离函数，比如闵可夫斯基度量
 ">[2]</span></a></sup> ，定义$d(x_1,x_2)=|x_1-x_2|=\sqrt{\sum_{i=1}^m(x^i_1-x_2^i)}$</p>
-<h3 id="邻域"><a href="#邻域" class="headerlink" title="邻域"></a>邻域</h3><p>定义：$\forall a \in\mathcal{R}^m， \forall\delta&gt;0，$ 定义以$a$为心，以 $\delta$为半径的球</p>
-<p>$B(a;\delta)= \{x\in\mathcal{R}^m|\ \ |x-a|&lt;\delta \}$</p>
+<h3 id="邻域"><a href="#邻域" class="headerlink" title="邻域"></a>邻域</h3><p>定义：包含点 $x \in \mathcal{R}^m$的 $\mathcal{R}^m$中的开集 $E$，称为 $x$ 在 $\mathcal{R}^m$ 中的邻域。</p>
+<p>例1：$\forall a \in\mathcal{R}^m， \forall\delta&gt;0，$ 定义以$a$为心，以 $\delta$为半径的球 $B(a;\delta)= \{x\in\mathcal{R}^m|\ \ |x-a|&lt;\delta \}$</p>
+<p>是 $\mathcal{R}^m$ 中的点 $a$ 的一个典型的邻域</p>
 <h3 id="开集"><a href="#开集" class="headerlink" title="开集"></a>开集</h3><p>定义：$G\subset \mathcal{R}^m$称为 $\mathcal{R}^m$中的开集，若 $\forall x\in G，\exists \delta&gt;0，s.t. \  B(x,\delta )\subset G$</p>
 <p>例1：$\mathcal{R}^m$是 $\mathcal{R}^m$中的开集</p>
 <p>例2：空集 $\emptyset$ 是 $\mathcal{R}^m$中的开集</p>
@@ -374,7 +375,34 @@
 <p>例2：空集 $\emptyset$ 是 $\mathcal{R}^m$中的闭集</p>
 <p>例3：闭球 $\bar{B}(a,r)$  $(r&gt;0)$ 是 $\mathcal{R}^m$中的开集</p>
 <p>例4：$[a,b]$ 是 $\mathcal{R}^1$中的闭集</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文的定义、证明等均基于《数学分析(卓里奇)》，不同书本使用的体系可能不同，仅供参考<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">当然也可以定义其它的满足条件(1)～(3)的距离函数，比如闵可夫斯基度量<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">全集和空集既是开集也是闭集，根据定义即知<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+<h3 id="内点"><a href="#内点" class="headerlink" title="内点"></a>内点</h3><p>定义：如果 $x\in E$ 且 $\exists$ $x$ 的邻域 $O(x) \subset E$，则称 $x$ 为 $E$ 的内点<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="我们用 int E 来表示 E 的内点集
+">[5]</span></a></sup></p>
+<p>例1：开集的所有点都是内点</p>
+<hr>
+<h2 id="一些命题"><a href="#一些命题" class="headerlink" title="一些命题"></a>一些命题</h2><h3 id="命题1"><a href="#命题1" class="headerlink" title="命题1"></a>命题1</h3><h4 id="命题"><a href="#命题" class="headerlink" title="命题"></a>命题</h4><p>&nbsp;<br>(1)设 $\{G_\alpha \}_{\alpha \in A}$ 是 $\mathcal{R}^m$ 中的开集族，则 $\bigcup_\limits{\alpha \in A} G_{\alpha}$ 是 $\mathcal{R}^m$ 中的开集。</p>
+<p>(2)$\mathcal{R}^m$中的有限个开集 $G_1,…,G_n$ 的并集 $\bigcap\limits_{i=1}^{n} G_i$ 是 $\mathcal{R}^m$ 中的开集。</p>
+<p>(3)设 $\{F_\alpha \}_{\alpha \in A}$ 是 $\mathcal{R}^m$ 中的闭集族，则 $\bigcap_\limits{\alpha \in A} F_{\alpha}$ 是 $\mathcal{R}^m$ 中的闭集。</p>
+<p>(4)$\mathcal{R}^m$中的有限个闭集 $F_1,…,F_n$ 的并集 $\bigcup\limits_{i=1}^{n} F_i$ 是 $\mathcal{R}^m$ 中的闭集。</p>
+<p>&nbsp;</p>
+<h4 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h4><p>&nbsp;<br>(1)$\forall x \in \bigcup_\limits{\alpha \in A} G_{\alpha}$ $\Rightarrow$ $\exists  \alpha_0 \in A$  $(x\in G_{\alpha_0})$</p>
+<p>$G_{\alpha_0}$ 是开集 $\Rightarrow$ $\exists \delta&gt;0，s.t. \  B(x,\delta )\subset G$ $\Rightarrow$ $B(x,\delta ) \subset \bigcup_\limits{\alpha \in A} G_{\alpha}$</p>
+<p>$\Rightarrow$ $\bigcup_\limits{\alpha \in A} G_{\alpha}$ 是 $\mathcal{R}^m$ 中的开集</p>
+<p>&nbsp;</p>
+<p>(2)$\forall x \in \bigcap\limits_{i=1}^{n} G_i$ $\Rightarrow$ $\forall i=1,2,…,n$  $(x\in G_i)$</p>
+<p>$\because G_i$ 是 $\mathcal{R}^m$ 中的开集</p>
+<p>$\therefore \exists \delta_i&gt;0，s.t. \  B(x,\delta_i )\subset G_i$</p>
+<p>取 $\delta=min\{ \delta_1,…,\delta_n\}$ <sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这就是为什么需要有限个开集啦，只有有限个才可以取最大最小值
+">[4]</span></a></sup> $&gt;0$ 则 $B(x,\delta)\subset G_i (i=1,2,…,n)$</p>
+<p>$\Rightarrow$ $B(x,\delta)\subset \bigcap\limits_{i=1}^{n} G_i$</p>
+<p>$\Rightarrow$ $\bigcap\limits_{i=1}^{n} G_i$ 是 $\mathcal{R}^m$ 中的开集</p>
+<p>&nbsp;</p>
+<p>(3)$\mathcal{R}^m \backslash \bigcap_\limits{\alpha \in A} F_{\alpha} = \bigcup_\limits{\alpha \in A} (\mathcal{R}^m \backslash F_{\alpha})$ 为 $\mathcal{R}^m$ 中的开集</p>
+<p>$\Rightarrow$ $\bigcap_\limits{\alpha \in A} F_{\alpha}$ 是 $\mathcal{R}^m$ 中的闭集</p>
+<p>&nbsp;</p>
+<p>(4)$\mathcal{R}^m \backslash \bigcup\limits_{i=1}^{n} F_i = \bigcap\limits_{i=1}^{n} (\mathcal{R}^m \backslash F_{i})$ 为 $\mathcal{R}^m$ 中的开集</p>
+<p>$\Rightarrow$ $\bigcup\limits_{i=1}^{n} F_i$ 是 $\mathcal{R}^m$ 中的闭集</p>
+<hr>
+<h2 id="一些定理"><a href="#一些定理" class="headerlink" title="一些定理"></a>一些定理</h2><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">本文的定义、证明等均基于《数学分析(卓里奇)》，不同书本使用的体系可能不同，仅供参考<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">当然也可以定义其它的满足条件(1)～(3)的距离函数，比如闵可夫斯基度量<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">全集和空集既是开集也是闭集，根据定义即知<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这就是为什么需要有限个开集啦，只有有限个才可以取最大最小值<a href="#fnref:4" rev="footnote"> ↩</a></span></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">我们用 int E 来表示 E 的内点集<a href="#fnref:5" rev="footnote"> ↩</a></span></li></ol></div></div>
       
     </div>
     
@@ -587,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AE%9A%E4%B9%89"><span class="nav-text">一些定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B7%9D%E7%A6%BB"><span class="nav-text">距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%82%BB%E5%9F%9F"><span class="nav-text">邻域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E9%9B%86"><span class="nav-text">开集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AD%E9%9B%86"><span class="nav-text">闭集</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AE%9A%E4%B9%89"><span class="nav-text">一些定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B7%9D%E7%A6%BB"><span class="nav-text">距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%82%BB%E5%9F%9F"><span class="nav-text">邻域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E9%9B%86"><span class="nav-text">开集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AD%E9%9B%86"><span class="nav-text">闭集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E7%82%B9"><span class="nav-text">内点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%91%BD%E9%A2%98"><span class="nav-text">一些命题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BD%E9%A2%981"><span class="nav-text">命题1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E9%A2%98"><span class="nav-text">命题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-text">证明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%AE%9A%E7%90%86"><span class="nav-text">一些定理</span></a></li></ol></div>
             
 
           </div>
