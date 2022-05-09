@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Comic Sans MS', "Hanzipen SC", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
+  font-size: 17.5px;
   line-height: 2;
   color: #555;
   background: #f5f7f9;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 19.5px;
   }
 }
 h1,
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Monda', 'Comic Sans MS', "Hanzipen SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans MS', "Hanzipen SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -445,7 +445,7 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 900px;
+  width: 920px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -457,7 +457,7 @@ body {
 }
 .main-inner {
   margin: 0 auto;
-  width: 900px;
+  width: 920px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
@@ -474,7 +474,7 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 900px;
+  width: 920px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
@@ -1129,7 +1129,7 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: normal;
   font-family: 'Comic Sans MS', "Hanzipen SC", "Microsoft YaHei", sans-serif;
 }
@@ -1238,7 +1238,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 17.5px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1953,7 +1953,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6a13ff;
+  background: #ff98dd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2805,7 +2805,7 @@ pre .javascript .function {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 900px;
+  width: 920px;
   background: rgba(255,255,255,0.7);
   min-height: 700px;
   box-shadow: initial;
@@ -3124,19 +3124,52 @@ pre .javascript .function {
 .post {
   margin-top: 15px;
   margin-bottom: 60px;
-  padding: 25px;
+  padding: 3px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .headband {
   display: none;
 }
+body {
+  background: url("/images/1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+}
+.sidebar {
+  opacity: 0.8;
+}
+.header-inner {
+  background: rgba(255,255,255,0.8);
+}
 h1 {
   font-size: 2.8em;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 h3 {
+  font-size: 1.5em;
+}
+h4 {
   font-size: 1.2em;
+}
+.footer-inner {
+  color: #000;
+  opacity: 0.7;
+}
+.post-button .btn {
+  color: #555 !important;
+  background-color: rgba(255,255,255,0.35);
+  border-radius: 3px;
+  font-size: 15px;
+  transition-property: unset;
+  padding: 0px 15px;
+}
+.post-button .btn:hover {
+  color: rgba(255,255,255,0.8) !important;
+  border-radius: 3px;
+  font-size: 15px;
+  background-color: rgba(0,0,0,0.35);
 }
